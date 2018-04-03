@@ -1,4 +1,4 @@
-\documentclass[dvipdfm,a4paper, 12pt,english]{report}
+\documentclass[a4paper, 12pt,english]{report}
                                     %romanian
 %pentru limba romana
 \usepackage{babel}
@@ -22,12 +22,12 @@
 
 %pentru link la citari
 \usepackage[dvips]{graphicx,color}
-\usepackage[dvipdfm,colorlinks]{hyperref}
+\usepackage[colorlinks]{hyperref}
 
 \hypersetup{
-pdftitle={LucrareLicenta},
-pdfauthor={Andreea},
-pdfkeywords={pdf, latex, tex, ps2pdf, dvipdfm, pdflatex},
+pdftitle={BachelorThesis},
+pdfauthor={Norbert},
+pdfkeywords={pdf, latex, tex, ps2pdf, pdflatex},
 bookmarksnumbered,
 pdfstartview={FitH},
 urlcolor=blue,
@@ -54,26 +54,26 @@ citecolor=blue,}
 \begin{titlepage}
 
 	\begin{center}
-		\Large{{BABEª-BOLYAI UNIVERISTY CLUJ-NAPOCA}}
+		\Large{{BABES-BOLYAI UNIVERISTY CLUJ-NAPOCA}}
 		\Large{{FACULTY OF MATHEMATICS AND COMPUTER SCIENCE}}
 		
 		\vspace{8cm}
 		
-		\textbf{DIPLOMA THESIS}
+		\textbf{BACHELOR THESIS}
 		
 		\vspace{1cm}
-		\Huge\textbf{{DIPLOMA TITLE}}
+		\Huge\textbf{{Sign-Language Recognition using RetinaNet}}
 		\fontsize{12}{14}
 		
 	\end{center}
 	\vspace{6cm}
 	
 	\hspace*{0.8cm}Supervisor: \hfill  Author: \hspace*{0.8cm} \\    
-	\textbf{Prof. Dr. FirstName LastName  \hfill  \textbf{FirstName LastName}}
+	\textbf{Prof. Dr. Laura Diosan  \hfill  \textbf{Norbert-Cristian Bereczki}}
 	
 	\vspace{2cm}
 	\begin{center}
-		\Large{2009}
+		\Large{2018}
 	\end{center}
 \end{titlepage}  
     
@@ -88,21 +88,21 @@ citecolor=blue,}
 \renewcommand{\footrulewidth}{0pt}
 \cleardoublepage
 %\addcontentsline{toc}{Abstract}{\\  Abstract \ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . } 
-ABSTRACT
+\begin{abstract}
 \vspace{0.5cm}	
 \hrule
 \vspace{0.5cm}	
 %\cleardoublepage
 
-Lucrãrile de licenþã vor include un text de o paginã redactat în limba englezã, intitulat Abstract, care va conþine un rezumat pe capitole a lucrãrii de licenþã ºi o auto-evaluare a gradului de noutate ºi originalitatea lucrãrii, inclusiv cu referire la originalitatea aplicaþiei realizate. 
+Lucr?rile de licen?? vor include un text de o pagin? redactat ?n limba englez?, intitulat Abstract, care va con?ine un rezumat pe capitole a lucr?rii de licen?? ?i o auto-evaluare a gradului de noutate ?i originalitatea lucr?rii, inclusiv cu referire la originalitatea aplica?iei realizate. 
 
-Ultimul paragraf al rezumatului va conþine urmãtorul text: 
+Ultimul paragraf al rezumatului va con?ine urm?torul text: 
 
 This work is the result of my own activity. I have neither given nor received unauthorized assistance on this work. 
 
-Pagina din lucrarea de licenþã care conþine rezumatul va fi semnatã de student în original. Studenþii specializãrii matematicã-informaticã linia de studiu germanã vor redacta acest rezumat în limba germanã. Toþi ceilalþi vor redacta rezumatul în limba englezã. Rezumatele vor fi predate în format electronic cadrelor didactice îndrumãtoare.
+Pagina din lucrarea de licen?? care con?ine rezumatul va fi semnat? de student ?n original. Studen?ii specializ?rii matematic?-informatic? linia de studiu german? vor redacta acest rezumat ?n limba german?. To?i ceilal?i vor redacta rezumatul ?n limba englez?. Rezumatele vor fi predate ?n format electronic cadrelor didactice ?ndrum?toare.
 
-
+\end{abstract}
 \tableofcontents
            
 \newpage
@@ -113,6 +113,8 @@ Pagina din lucrarea de licenþã care conþine rezumatul va fi semnatã de student î
 \include{Chapters/Introduction}
 \include{Chapters/Chapter2}
 \include{Chapters/Chapter3}
+\include{Chapters/Chapter4}
+\include{Chapters/Chapter5}
 
 \include{Chapters/Conclusions}
 
@@ -120,12 +122,6 @@ Pagina din lucrarea de licenþã care conþine rezumatul va fi semnatã de student î
 \clearpage
 \addcontentsline{toc}{chapter}{Bibliografy}
 
-
-
-\input{Chapters/Appendex}
-
-
-\bibliographystyle{alpha}
-\bibliography{BiblioLicenta}
+\include{Chapters/Biblio}
 
 \end{document}
