@@ -1,0 +1,131 @@
+\documentclass[dvipdfm,a4paper, 12pt,english]{report}
+                                    %romanian
+%pentru limba romana
+\usepackage{babel}
+\usepackage[latin2]{inputenc}
+%se pot comenta si elimina (la fel ca si optiunea de mai sus -english) daca textul nu contine diacritice
+
+\usepackage{url}
+\usepackage{amssymb}
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode} 
+\usepackage{multirow}
+
+\renewcommand{\algorithmiccomment}[1]{\hfill // #1} 
+
+\usepackage{geometry}
+\usepackage{graphics}
+
+%\usepackage{color}           %\textcolor{red}{ De completat ... }
+
+%pentru link la citari
+\usepackage[dvips]{graphicx,color}
+\usepackage[dvipdfm,colorlinks]{hyperref}
+
+\hypersetup{
+pdftitle={LucrareLicenta},
+pdfauthor={Andreea},
+pdfkeywords={pdf, latex, tex, ps2pdf, dvipdfm, pdflatex},
+bookmarksnumbered,
+pdfstartview={FitH},
+urlcolor=blue,
+colorlinks=true,
+linkcolor=blue,
+citecolor=blue,}
+
+
+\geometry{a4paper,top=2.5cm,left=3cm,right=3cm,bottom=2.5cm}
+%controlling the appearance of your headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+
+\lhead{}
+\chead{}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.2pt}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+
+	\begin{center}
+		\Large{{BABEª-BOLYAI UNIVERISTY CLUJ-NAPOCA}}
+		\Large{{FACULTY OF MATHEMATICS AND COMPUTER SCIENCE}}
+		
+		\vspace{8cm}
+		
+		\textbf{DIPLOMA THESIS}
+		
+		\vspace{1cm}
+		\Huge\textbf{{DIPLOMA TITLE}}
+		\fontsize{12}{14}
+		
+	\end{center}
+	\vspace{6cm}
+	
+	\hspace*{0.8cm}Supervisor: \hfill  Author: \hspace*{0.8cm} \\    
+	\textbf{Prof. Dr. FirstName LastName  \hfill  \textbf{FirstName LastName}}
+	
+	\vspace{2cm}
+	\begin{center}
+		\Large{2009}
+	\end{center}
+\end{titlepage}  
+    
+    
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\pagenumbering{roman} 
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\cleardoublepage
+%\addcontentsline{toc}{Abstract}{\\  Abstract \ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . } 
+ABSTRACT
+\vspace{0.5cm}	
+\hrule
+\vspace{0.5cm}	
+%\cleardoublepage
+
+Lucrãrile de licenþã vor include un text de o paginã redactat în limba englezã, intitulat Abstract, care va conþine un rezumat pe capitole a lucrãrii de licenþã ºi o auto-evaluare a gradului de noutate ºi originalitatea lucrãrii, inclusiv cu referire la originalitatea aplicaþiei realizate. 
+
+Ultimul paragraf al rezumatului va conþine urmãtorul text: 
+
+This work is the result of my own activity. I have neither given nor received unauthorized assistance on this work. 
+
+Pagina din lucrarea de licenþã care conþine rezumatul va fi semnatã de student în original. Studenþii specializãrii matematicã-informaticã linia de studiu germanã vor redacta acest rezumat în limba germanã. Toþi ceilalþi vor redacta rezumatul în limba englezã. Rezumatele vor fi predate în format electronic cadrelor didactice îndrumãtoare.
+
+
+\tableofcontents
+           
+\newpage
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.2pt}
+\pagenumbering{arabic}
+
+\include{Chapters/Introduction}
+\include{Chapters/Chapter2}
+\include{Chapters/Chapter3}
+
+\include{Chapters/Conclusions}
+
+%ca sa apara bibliografia in contents
+\clearpage
+\addcontentsline{toc}{chapter}{Bibliografy}
+
+
+
+\input{Chapters/Appendex}
+
+
+\bibliographystyle{alpha}
+\bibliography{BiblioLicenta}
+
+\end{document}
